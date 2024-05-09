@@ -1,0 +1,99 @@
+
+.logo {
+    width: 50%;
+    height: auto; 
+    border-radius: 50%;
+    <img src="fx.jpg">
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-image: url('happy 7.jpg');
+background-size: cover;
+}
+
+.container {
+width: 40%;
+margin: 0 auto;
+padding: 20px;
+float: center;
+}
+
+header {
+background-color: rgba(248, 141, 18, 0.8);
+padding: 20px 0;
+}
+
+header h1 {
+margin: 0;
+font-size: 23px;
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+margin-right: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: #5805dd;
+}
+
+.section {
+background-color: rgba(99, 194, 76, 0.8);
+padding: 40px 0;
+}
+
+.section h2 {
+margin-top: 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.loader {
+    width: 50px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.loader div {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #f70a2a;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: bounce 2s infinite alternate;
+}
+
+.loader div:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.loader div:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.hide-loader {
+    display: none;
+}
